@@ -43,6 +43,7 @@ Mendukung autentikasi JWT, manajemen buku (CRUD), serta peminjaman dan pengembal
 ## Project Structure
 
 ```
+---
 LibraryManagement/
 ├─ LibraryManagementAPI/          # Backend .NET
 │  ├─ Controllers/
@@ -62,6 +63,7 @@ LibraryManagement/
    └─ vite.config.js
 
 ---
+```
 
 ## Getting Started
 
