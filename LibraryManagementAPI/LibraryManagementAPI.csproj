@@ -1,0 +1,91 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.22"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+      <Content Include="library-kendo\.git\COMMIT_EDITMSG" />
+      <Content Include="library-kendo\.git\config" />
+      <Content Include="library-kendo\.git\description" />
+      <Content Include="library-kendo\.git\HEAD" />
+      <Content Include="library-kendo\.git\hooks\applypatch-msg.sample" />
+      <Content Include="library-kendo\.git\hooks\commit-msg.sample" />
+      <Content Include="library-kendo\.git\hooks\fsmonitor-watchman.sample" />
+      <Content Include="library-kendo\.git\hooks\post-update.sample" />
+      <Content Include="library-kendo\.git\hooks\pre-applypatch.sample" />
+      <Content Include="library-kendo\.git\hooks\pre-commit.sample" />
+      <Content Include="library-kendo\.git\hooks\pre-merge-commit.sample" />
+      <Content Include="library-kendo\.git\hooks\pre-push.sample" />
+      <Content Include="library-kendo\.git\hooks\pre-rebase.sample" />
+      <Content Include="library-kendo\.git\hooks\pre-receive.sample" />
+      <Content Include="library-kendo\.git\hooks\prepare-commit-msg.sample" />
+      <Content Include="library-kendo\.git\hooks\push-to-checkout.sample" />
+      <Content Include="library-kendo\.git\hooks\sendemail-validate.sample" />
+      <Content Include="library-kendo\.git\hooks\update.sample" />
+      <Content Include="library-kendo\.git\index" />
+      <Content Include="library-kendo\.git\info\exclude" />
+      <Content Include="library-kendo\.git\logs\HEAD" />
+      <Content Include="library-kendo\.git\logs\refs\heads\master" />
+      <Content Include="library-kendo\.git\objects\02\d5f67a1f119da590b6761cb4136d5354e8456f" />
+      <Content Include="library-kendo\.git\objects\06\adf384dcdee3f6e491218b61d3f864d8e0c388" />
+      <Content Include="library-kendo\.git\objects\07\f4f2ed6f68050b39e5e4177d43e57111dea976" />
+      <Content Include="library-kendo\.git\objects\0f\b65c062fbb4063a8f16c39c06de5eb252d2907" />
+      <Content Include="library-kendo\.git\objects\11\3dfbbad6236481d7f12c005b5db81d2cfdcccc" />
+      <Content Include="library-kendo\.git\objects\11\efb191560af018d51783753dedb31168b6fbf2" />
+      <Content Include="library-kendo\.git\objects\15\6d8bf45e791e4a087f30be7f19306fbce20676" />
+      <Content Include="library-kendo\.git\objects\18\c0a5ce6f3b2307db8180a130c4b012bb62957b" />
+      <Content Include="library-kendo\.git\objects\2e\2d548797534223b492c57babd27cf892f75283" />
+      <Content Include="library-kendo\.git\objects\43\29f8845da8a8478f05c02a882bd3a328970bdb" />
+      <Content Include="library-kendo\.git\objects\43\8559e5d5072c1d9278689e5c0efd192a98a470" />
+      <Content Include="library-kendo\.git\objects\57\0d1eef1cb4416648581af3eba517744bb94108" />
+      <Content Include="library-kendo\.git\objects\5e\33307ce26ad53e9ea1600cd3766eef11f8665b" />
+      <Content Include="library-kendo\.git\objects\61\b76c592e22810feb0c78cb1e7c025c223b2a9b" />
+      <Content Include="library-kendo\.git\objects\67\ce9075376ac94c9b4c72e3b258f63ad68e4ba3" />
+      <Content Include="library-kendo\.git\objects\75\e636a2fd7f9ccef17d05f0a5c24a18af2dd0de" />
+      <Content Include="library-kendo\.git\objects\94\3be2ec722ac5889e6802cf3f51cc872ee8e2e4" />
+      <Content Include="library-kendo\.git\objects\99\de551f6d6deabb43529d89544ca12eb3d43778" />
+      <Content Include="library-kendo\.git\objects\9f\546f004ea9cd245246d85f88f33cb82871d1fa" />
+      <Content Include="library-kendo\.git\objects\a2\a481767939769a10c14434790061ad144ac767" />
+      <Content Include="library-kendo\.git\objects\a7\eaa10f0605bc7109a981838542cab18a6810e5" />
+      <Content Include="library-kendo\.git\objects\b2\7ef43c0be9cd096927b6cb3d24ebaaf6200939" />
+      <Content Include="library-kendo\.git\objects\b5\6de4171ad1b0570b15aa4a1103d4f861dc9b6b" />
+      <Content Include="library-kendo\.git\objects\c1\09043a8761827d8572e742e164e14137937f51" />
+      <Content Include="library-kendo\.git\objects\ca\51c0455034807ac92156efb5d903f0f867817b" />
+      <Content Include="library-kendo\.git\objects\cb\fa6de7629fd7ac3671a3abeea9147b290794c7" />
+      <Content Include="library-kendo\.git\objects\ce\f5d7e2e4e9bd62891747e21ea7f93a480b3cc3" />
+      <Content Include="library-kendo\.git\objects\d2\f77188b12300d97a9360bf02aef17cace67ffc" />
+      <Content Include="library-kendo\.git\objects\ea\c842276d6a4d047e487e7dec3af813c0a9eb05" />
+      <Content Include="library-kendo\.git\objects\ee\5681e0ee55018955e8454a0e32229dde67e748" />
+      <Content Include="library-kendo\.git\objects\f2\0f39c068e696991429e609b8ff37ebfbf6102b" />
+      <Content Include="library-kendo\.git\objects\f2\73c0055058a3b7163a94500604aac014a2cb3a" />
+      <Content Include="library-kendo\.git\objects\f5\94e5e990f907d07c40558cadb928aed2d7fb86" />
+      <Content Include="library-kendo\.git\objects\f9\fd5d4836ca35625678b4fb53a8fc33018bec52" />
+      <Content Include="library-kendo\.git\objects\ff\ccdf5e29d27b8bbb5a328170aff0750357bdfa" />
+      <Content Include="library-kendo\.git\refs\heads\master" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="library-kendo\.git\objects\info\" />
+      <Folder Include="library-kendo\.git\objects\pack\" />
+      <Folder Include="library-kendo\.git\refs\tags\" />
+    </ItemGroup>
+
+</Project>
