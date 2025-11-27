@@ -67,7 +67,7 @@ LibraryManagement/
 
 ### 1. Clone Repo
 
-git clone https://github.com/USERNAME/LibraryManagement.git
+git clone https://github.com/ndicz/LibraryManagement.git
 cd LibraryManagement
 
 
