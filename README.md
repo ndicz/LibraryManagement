@@ -1,3 +1,8 @@
+# Library Management App
+
+Sistem manajemen perpustakaan dengan **ASP.NET Core Web API (.NET 8)** sebagai backend dan **React + KendoReact** sebagai frontend.  
+Mendukung autentikasi JWT, manajemen buku (CRUD), serta peminjaman dan pengembalian buku.
+
 ---
 
 ## Features
@@ -33,33 +38,39 @@
   - KendoReact (Grid, Inputs, Buttons, Dialogs)
   - Axios untuk HTTP client
 
+---
+
 ## Project Structure
 
+```
 LibraryManagement/
-├─ LibraryManagementAPI/ # Backend .NET
-│ ├─ Controllers/
-│ ├─ Data/
-│ ├─ Helpers/
-│ ├─ Models/
-│ ├─ Repositories/
-│ ├─ Services/
-│ └─ Program.cs
-└─ library-kendo-react/ # Frontend React + Kendo
-├─ src/
-│ ├─ api/
-│ ├─ components/
-│ ├─ utils/
-│ ├─ App.jsx
-│ └─ main.jsx
-└─ vite.config.js
+├─ LibraryManagementAPI/          # Backend .NET
+│  ├─ Controllers/
+│  ├─ Data/
+│  ├─ Helpers/
+│  ├─ Models/
+│  ├─ Repositories/
+│  ├─ Services/
+│  └─ Program.cs
+└─ library-kendo-react/           # Frontend React + Kendo
+   ├─ src/
+   │  ├─ api/
+   │  ├─ components/
+   │  ├─ utils/
+   │  ├─ App.jsx
+   │  └─ main.jsx
+   └─ vite.config.js
+
 ---
 
 ## Getting Started
 
 ### 1. Clone Repo
 
-git clone https://github.com/ndicz/LibraryManagement.git
+git clone https://github.com/USERNAME/LibraryManagement.git
 cd LibraryManagement
+
+
 
 ---
 
@@ -70,23 +81,33 @@ Masuk ke folder backend:
 cd LibraryManagementAPI
 dotnet restore
 
+
+
 Update database & jalankan:
 
 dotnet ef database update
 dotnet run
 
+
+
 Backend default:
 
 http://localhost:5293
+
+
 
 Admin default (seeding):
 
 username: admin
 password: Admin123!
 
+
+
 Swagger tersedia di:
 
 http://localhost:5293/swagger
+
+
 
 ---
 
@@ -97,19 +118,27 @@ Di root repo:
 cd ../library-kendo-react
 npm install
 
+
+
 Pastikan `src/api/httpClient.js` mengarah ke backend yang benar:
 
 const http = axios.create({
 baseURL: "http://localhost:5293/api",
 });
 
+
+
 Jalankan frontend:
 
 npm run dev
 
+
+
 Frontend default:
 
 http://localhost:5173
+
+
 
 ---
 
@@ -137,6 +166,8 @@ app.UseCors(MyAllowSpecificOrigins);
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+
+
 
 ---
 
